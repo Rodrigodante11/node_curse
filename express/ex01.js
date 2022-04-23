@@ -13,8 +13,11 @@ server.get('/teste',  function(req,res){
 })
 
 
-server.get(/api/,  function(req,res){
+server.get(/api/,  function(req,res){ // se tiver essas letras 'api' na urlchama essa funcao
     res.send('<h1> API!</h1>')
+    //http://localhost:3000/api/teste
+    //http://localhost:3000/qualquercoisaapi
+    //http://localhost:3000/bbbbbapi
 })
 
 server.listen(3000, () => console.log('Executando...'))
